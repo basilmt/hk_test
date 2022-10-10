@@ -1,5 +1,5 @@
 function CreateUrl(key, gql) {
-	var gq = 'SELECT '+ gql;
+	var gq = gql;
 	var encodedgg = encodeURIComponent(gq);
 	// var url = 'https://docs.google.com/spreadsheets/d/' + key + '/gviz/tq?sheet=Sheet2&tq=' + encodedgg;
     var url = 'https://docs.google.com/spreadsheets/d/' + key + '/gviz/tq?tq=' + encodedgg;
@@ -36,7 +36,7 @@ function log(txt){
 }
 
 var gsKey = '13wEO7VEiP7YcXvaFF9ZT5BHtqhvmPDP6_WXSY5rYV_g';
-var gql = "*";
+var gql = "SELECT *";
 var url = CreateUrl(gsKey, gql);
 var previewElement = document.getElementById('preview');
 preview(previewElement, url);
