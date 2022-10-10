@@ -36,7 +36,7 @@ function log(txt){
 }
 
 var gsKey = '13wEO7VEiP7YcXvaFF9ZT5BHtqhvmPDP6_WXSY5rYV_g';
-var gql = "'name', 'place'";
+var gql = "*";
 var url = CreateUrl(gsKey, gql);
 var previewElement = document.getElementById('preview');
 preview(previewElement, url);
