@@ -1,7 +1,7 @@
 function CreateUrl(key, gql) {
 	var gq = 'SELECT '+ gql;
 	var encodedgg = encodeURIComponent(gq);
-	var url = 'https://docs.google.com/spreadsheets/d/' + key + '/gviz/tq?tq=' + encodedgg;
+	var url = 'https://docs.google.com/spreadsheets/d/' + key + '/gviz/tq?sheet=Sheet2&tq=' + encodedgg;
 	return url;
 }
 
