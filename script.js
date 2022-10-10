@@ -24,10 +24,14 @@ function preview(elm, url) {
 		.then(function(response) {
 			var responseText = response.substring(response.indexOf("(") + 1, response.lastIndexOf(")"));
 			var response = JSON.parse(responseText);
-            console.log(response);
+            log(response);
 			var value = response['table']['rows'][0]['c'][0]['v'];
 			elm.innerHTML = value;
 		})
+}
+
+function log(txt){
+    document.getElementById('log').innerHTML = txt;
 }
 
 var gsKey = '13wEO7VEiP7YcXvaFF9ZT5BHtqhvmPDP6_WXSY5rYV_g';
