@@ -24,7 +24,7 @@ function preview(elm, url) {
 		.then(function(response) {
 			var responseText = response.substring(response.indexOf("(") + 1, response.lastIndexOf(")"));
 			var response = JSON.parse(responseText);
-            log(response);
+            log(JSON.stringify(response, null, 2));
 			var value = response['table']['rows'][0]['c'][0]['v'];
 			elm.innerHTML = value;
 		})
