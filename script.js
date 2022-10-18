@@ -68,3 +68,5 @@ var gql = "SELECT *";
 var url = CreateUrl(gsKey, gql);
 var previewElement = document.getElementById('preview');
 preview(previewElement, url);
+
+// check if deployment still takes place
