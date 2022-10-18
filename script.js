@@ -60,8 +60,6 @@ function preview(elm, url) {
 			var response = JSON.parse(responseText);
             log(JSON.stringify(response, null, 2));
 			draw_tables(elm, response);
-			var value = response['table']['rows'][0]['c'][0]['v'];
-			elm.innerHTML = value;
 		})
 }
 
